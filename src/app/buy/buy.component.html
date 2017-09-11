@@ -1,0 +1,26 @@
+<body class="background-accent">
+  <div class="container-fluid">
+    <h2>Order Form</h2>
+    <p>
+      Please fill out the ENTIRE form. Otherwise you will not be able to place an order. If you see your name and products listed,
+      we have recieved your order. 
+      You can place also cancel your order by pressing "x". However, you will be unable to cancel the first 4 
+      example orders from our best customers.
+      Thank You! Visit Back Soon!
+    </p>
+    <div class="addItem">
+      <p>Name: <input [(ngModel)] = "newName" required placeholder="Add Name" class="addText"></p>
+      <p>Address: <input [(ngModel)] = "newAddress" required placeholder="Add Address" class="addText"></p>
+      <p>Email: <input [(ngModel)] = "newEmail" required placeholder="Add Email" class="addText"></p>
+      <p>Product: <input [(ngModel)] = "newProd" required placeholder="Add Product" class="addText"></p>
+      <button (click) = "pushItem()">Buy</button>
+    </div>
+    <ul id="formUl">
+      <li id="formLi" *ngFor="let i of items; let idx = index">
+        {{i}}
+        <span id="formSpan" (click) = "removeItem(idx)">x</span>
+      </li>
+    </ul>
+  </div>
+</body>
+
