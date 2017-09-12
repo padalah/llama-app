@@ -14,18 +14,8 @@ h2, h3, p{
     margin-left:10px!important;
 }
 
-.background-primary{
-    background: url("https://img0.etsystatic.com/041/0/5254210/il_340x270.647372632_4z1c.jpg") no-repeat center center!important; 
-    -webkit-background-size: cover!important; 
-    -moz-background-size: cover!important; 
-    -o-background-size: cover!important; 
-    background-size: cover!important;
-    margin:0px!important;
-    min-height:100%!important;
-} 
-
-.background-accent{
-    background: url("https://i.pinimg.com/originals/19/05/90/1905905b7dde2b169962746a7cea82e7.jpg") no-repeat center center!important; 
+body{
+    background: url("https://i.pinimg.com/originals/19/05/90/1905905b7dde2b169962746a7cea82e7.jpg") no-repeat center center fixed!important; 
     -webkit-background-size: cover!important; 
     -moz-background-size: cover!important; 
     -o-background-size: cover!important; 
@@ -37,21 +27,29 @@ h2, h3, p{
 #h2llama{
     color: black;
     font-size:50px;
+    float: center;
+}
+
+#buy-button{
+    background-color: black;
+    font-size: 30px;
+    color: white;
 }
 
 #h3llama{
-    color: white;
+    color: black;
     font-size:40px;
 }
 
 #pllama{
-    color: white;
+    color: grey;
     font-size: 30px;
 }
 
 #h2other{
     color: black;
     font-size:50px;
+    float:center;
 }
 
 #h3other{
@@ -64,8 +62,10 @@ h2, h3, p{
     font-size: 30px;
 }
 
-#factpic{
+#factpic, #llamapic{
     float: right;
+    border: 5px solid black;
+    padding:1px;
 }
 
 #navbar-container{
